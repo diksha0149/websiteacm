@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #e7f5ff;
-position: fixed;
+  position: fixed;
   z-index: 1000;
   font-family: 'Acme', sans-serif;
 }
@@ -81,7 +81,7 @@ position: fixed;
 /* ===========================================
 Hero and Service Section Start
 ======================================= */
-.section-hero .bgimage{
+.section-hero1 .bgimage{
     background-image: url("img/davv.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +102,20 @@ Hero and Service Section Start
     justify-content: center;
     align-items: center;  
 }
-.section-services,
+.section-hero1{
+  /* background-color: #a5d8ff; */
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.section-services{
+  height: 85vh;
+  /* display: flex; */
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+}
 .section-teams {
   /* background-color: #a5d8ff; */
   height: auto;
@@ -125,13 +138,25 @@ Hero and Service Section Start
 .a1{
     font-size: 7rem;
 }
+.nme{
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+}
 .hero{
     align-items: center;
     justify-content: space-evenly;
     position: relative;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 
+}
+.abt{
+  background-color: #364fc7;
 }
 .image {
     position: relative;
@@ -311,4 +336,14 @@ Responsive Codes
   .header {
     padding: 0 2.4rem;
   }
+  .alignimg{
+    display: inline-grid;
+    align-items: center;
+    grid-template-columns: auto;
+}
+.image img{
+  width: 100%;
+  height: 297px;
+  object-fit: cover;
+}
 }
