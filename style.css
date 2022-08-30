@@ -98,34 +98,48 @@ Hero and Service Section Start
 .section-hero{
     /* background-color: #a5d8ff; */
     height: auto;
+    overflow: auto;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
+    
 }
 .section-hero1{
   /* background-color: #a5d8ff; */
   height: 80vh;
   display: flex;
+  overflow: hidden;
   justify-content: center;
   align-items: center;  
 }
 .section-services{
-  height: 85vh;
-  /* display: flex; */
-  margin-top: 10px;
+  height: auto;
+  position: inherit;
   justify-content: center;
   align-items: center;
+  /* padding-top: 10%; */
+  /* background-color: #364fc7; */
 }
 .section-teams {
   /* background-color: #a5d8ff; */
   height: auto;
   /* display: flex; */
   justify-content: center;
+  /* position: absolute; */
   align-items: center;
 }
 .section-hero p,
 .section-services p {
   font-size: 3.2rem;
+}
+.name1{
+  font-size: 6rem;
+  font-weight: 800;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 .name{
     font-size: 6rem;
@@ -134,17 +148,32 @@ Hero and Service Section Start
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
+    padding-top: 8%;
+    /* margin-top: 20%; */
+}
+.names{
+  font-size: 6rem;
+  font-weight: 800;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
+  /* margin-top: 20%; */
 }
 .a1{
     font-size: 7rem;
 }
 .nme{
-  font-size: 2.5rem;
+  
+  font-size: 30px;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: auto;
-  width: 60%;
+  width: 70%;
   padding: 20px;
 }
 .hero{
@@ -155,8 +184,12 @@ Hero and Service Section Start
     margin-top: 10%;
 
 }
-.abt{
-  background-color: #364fc7;
+.headingg{
+  align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    text-align: center;
+    /* margin-top: 10%; */
 }
 .image {
     position: relative;
@@ -221,6 +254,11 @@ Hero and Service Section Start
     font-size: 2em;
     font-weight: bold;
 }
+.image__title1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
 
 .image__description {
     font-size: 1.75em;
@@ -236,6 +274,9 @@ footer {
   }
 .flex-rw {
     display: block;
+}
+.social-icons{
+  font-size: 25px;
 }
 .social-icons li{
     list-style: none;
@@ -258,6 +299,35 @@ footer {
     color: white;
     display: flex;
 }
+.faculty{
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.faculty_section{
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+  height: auto;
+  /* justify-content: center; */
+  margin: 10px;
+}
+.note{
+  width: 60%;
+  font-size: 22px;
+margin-right: auto;
+}
+.faculty .sir{
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+.contact{
+  font-size: 27px;
+}
 /* ===========================================
 Responsive Codes 
 ======================================= */
@@ -270,11 +340,28 @@ Responsive Codes
     border: 3px solid #212529;
     color: #212529;
   }
-
+  .section-hero1 .bgimage{
+    height: 60vh;
+  }
+  .section-services{
+    padding-top: 0%;
+    /* background-color: #364fc7; */
+  }
   .header {
     position: relative;
   }
-
+  .faculty{
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .note{
+    width: 100%;
+  }
   .navbar {
     /* display: none; */
     width: 100%;
@@ -341,6 +428,7 @@ Responsive Codes
     align-items: center;
     grid-template-columns: auto;
 }
+
 .image img{
   width: 100%;
   height: 297px;

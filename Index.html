@@ -8,22 +8,26 @@
     <title>IET DAVV ACM</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&display=swap" rel="stylesheet">
-    <link rel = "stylesheet" href = "http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cinzel&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+
 </head>
 
 <body>
     <header class="header">
         <img src="img/IET ACM Logo.png" alt="Acm Student Chapter" class="logo" />
+        <div id="toggle"></div>
+        <div class="navbar" id="navbar">
 
-        <nav class="navbar">
-            <ul class="navbar-list">
+            <ul class="navbar-list" id="navbar_ul">
                 <li><a class="navbar-link" href="#home">Home</a></li>
                 <li><a class="navbar-link" href="#aboutus">About</a></li>
                 <li><a class="navbar-link" href="#team">Our Team</a></li>
                 <li><a class="navbar-link" href="#contact">Contact</a></li>
             </ul>
-        </nav>
+        </div>
 
         <div class="mobile-navbar-btn">
             <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
@@ -37,9 +41,9 @@
     <main>
         <section class="section-hero1" id="home">
             <div class="bgimage"></div>
-            <div class="hero">
-                <div class="name a1">IET DAVV</div>
-                <div class="name">ACM STUDENT CHAPTER</div>
+            <div class="headingg">
+                <div class="name1 a1">IET DAVV</div>
+                <div class="name1">ACM STUDENT CHAPTER</div>
             </div>
         </section>
     </main>
@@ -48,36 +52,49 @@
           Our Service Section Start  
     ========================================  -->
     <div class="abt" id="aboutus">
-    <section class="section-services" >
-        <div class="hero">
-            <div class="name">About Us</div>
-            <div class="nme">ACM brings together computing educators,
-                researchers, and professionals to inspire
-                dialogue, share resources, and address the
-                field's challenges. As the world's largest
-                computing society, ACM strengthens the
-                profession's collective voice through strong
-                leadership, promotion of the highest
-                standards, and recognition of technical
-                excellence. ACM supports the professional
-                growth of its members by providing
-                opportunities for life-long learning, career
-                development, and professional networking.</div>
-        </div>
-    </section>
-</div>
+        <section class="section-services">
+            <div class="hero">
+                <div class="name">About Us</div>
+                <div class="nme">ACM brings together computing educators,
+                    researchers, and professionals to inspire
+                    dialogue, share resources, and address the
+                    field's challenges. As the world's largest
+                    computing society, ACM strengthens the
+                    profession's collective voice through strong
+                    leadership, promotion of the highest
+                    standards, and recognition of technical
+                    excellence. ACM supports the professional
+                    growth of its members by providing
+                    opportunities for life-long learning, career
+                    development, and professional networking.</div>
+            </div>
+        </section>
+    </div>
     <section class="section-teams" id="team">
-        <div class="name">The Team</div>
-        <div class="hero alignimg">
-            <div class="image">
-                <img class="image__img" src="img/CPPATIDAR.jpeg" alt="Bricks">
-                <div class="image__overlay image__overlay--primary">
-                    <div class="image__title">Chandra Prakash Patidar</div>
-                    <p class="image__description">
-                        Faculty Sponser
-                    </p>
+        <div class="faculty_section">
+            <div class="name">Faculty Sponser</div>
+            <div class="faculty">
+                <div class="image sir">
+                    <img class="image__img" src="img/CPPATIDAR.jpeg" alt="Bricks">
+                    <div class="image__overlay image__overlay--primary">
+                        <div class="image__title1">Chandra Prakash Patidar</div>
+                        <p class="image__description">
+                            Faculty Sponser
+                        </p>
+                    </div>
+                </div>
+                <div class="note">
+                    On behalf of the entire IET DAVV ACM Student Chapter, we welcome you to our website.ACM, the world's
+                    largest educational and scientific computing society, delivers resources that advance computing as a
+                    science and a profession.Our main Motive is to help students cultivate intellectual curiosity and
+                    embrace a love of learning as they aspire to reach excellence.We work on the motto ASPIRE AND
+                    ASCEND, which clearly signifies that all the members in the team are enthusiastic enough to grow and
+                    reach heights.
                 </div>
             </div>
+        </div>
+        <div class="names">The Team</div>
+        <div class="hero alignimg">
             <div class="image">
                 <img class="image__img" src="img/Rupam.jpeg" alt="Bricks">
                 <div class="image__overlay image__overlay--primary">
@@ -108,7 +125,7 @@
             <div class="image">
                 <img class="image__img" src="img/sakshi.jpg" alt="Bricks">
                 <div class="image__overlay image__overlay--primary">
-                    <div class="image__title">Sakshi kaushal</div>
+                    <div class="image__title">Sakshi Kaushal</div>
                     <p class="image__description">
                         Event Head
                     </p>
@@ -155,7 +172,7 @@
                 <div class="image__overlay image__overlay--primary">
                     <div class="image__title">Sarvada</div>
                     <p class="image__description">
-                        Public Relation Master
+                        Public Relation Head
                     </p>
                 </div>
             </div>
@@ -168,17 +185,31 @@
 
                 <footer class="flex-rw" style="z-index:0;">
                     <div class="foot-head">
-                        <h4>Let's Keep in touch</h4>
+                        <h4 class="contact">Let's Keep in touch</h4>
                     </div>
                     <div class="social-icons">
-                        <li><a class="btn-floating"><i class="material-icons" href="#"><i
-                                        class="fa fa-bell"></i></i></a></li>
                         <li><a class="btn-floating darken-1" href="https://twitter.com/TheOfficialACM"><i
                                     class="material-icons"><i class="fa fa-twitter"></i></i></a></li>
                         <li><a class="btn-floating" href="https://www.youtube.com/results?search_query=ACM"><i
                                     class="material-icons"><i class="fa fa-youtube"></i></i></a></li>
                         <li><a class="btn-floating" href="https://www.facebook.com/ACMIET/"><i class="material-icons"><i
                                         class="fa fa-facebook"></i></i></a></li>
+                        <li><a class="btn-floating" href="https://forms.gle/1gJRHSdPNvqkX6px7"><i
+                                    class="material-icons"><i class="fa fa-phone" aria-hidden="true"></i></i></a></li>
+                                    <!-- <span class="footer-social-overlap footer-social-icons-wrapper">
+                                        <a href="#" class="generic-anchor" target="_blank" title="linkedin" itemprop="significantLink"><i
+                                            class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.facebook.com/ACMIET/" class="generic-anchor" target="_blank" title="Facebook"
+                                          itemprop="significantLink"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://twitter.com/TheOfficialACM" class="generic-anchor" target="_blank" title="Twitter"
+                                          itemprop="significantLink"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.instagram.com/acm_iet/" class="generic-anchor" target="_blank" title="Instagram"
+                                          itemprop="significantLink"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.youtube.com/results?search_query=ACM" class="generic-anchor" target="_blank"
+                                          title="Youtube" itemprop="significantLink"><i class="fa fa-youtube"></i></a>
+                                        <a href="https://www.acm.org/" class="generic-anchor" target="_blank" title="Google Plus"
+                                          itemprop="significantLink"><i class="fa fa-google-plus"></i></a>
+                                      </span> -->
                     </div>
 
                 </footer>
@@ -191,7 +222,26 @@
     ========================================  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="index.js"></script>
+    <script>
+        const mobile_nav = document.querySelector(".mobile-navbar-btn");
+        const nav_header = document.querySelector(".header");
+
+        const toggleNavbar = (e) => {
+            // console.log(e);
+            nav_header.classList.toggle("active");
+        };
+
+        mobile_nav.addEventListener("click", (e) => toggleNavbar(e));
+        navbar.addEventListener(
+             "click",
+             function(e){
+             console.log(e);
+             if(e.target.id==="navbar" || e.target.className==="navbar-link"){
+                nav_header.classList.remove("active");
+             }
+        }
+)
+    </script>
 </body>
 
 </html>
